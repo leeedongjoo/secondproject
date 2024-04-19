@@ -1,5 +1,6 @@
 package com.example.apitest
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
@@ -20,13 +21,16 @@ class SubwayActivity : AppCompatActivity() {
         enableEdgeToEdge()
         var binding = ActivitySubwayBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setContentView(R.layout.activity_subway)
         imageView = findViewById(R.id.img_subway)
 
         scaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
         binding.youngsan.setOnClickListener {
             binding.testtx.text = "success"
 
+        }
+        binding.menu1.setOnClickListener {
+            var intent = Intent(this, SubwayAPI::class.java)
+            startActivity(intent)
         }
 
     }
@@ -45,5 +49,6 @@ class SubwayActivity : AppCompatActivity() {
         }
     }
 }
+
 
 

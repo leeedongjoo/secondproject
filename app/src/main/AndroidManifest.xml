@@ -19,7 +19,11 @@
             android:name=".SubwayAPI"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SubwayInfo"
+            android:exported="false" />
+
+        <activity
+            android:name=".SubwayActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

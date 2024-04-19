@@ -4,15 +4,17 @@ plugins {
 }
 
 android {
-    namespace = "com.example.apitest"
-    compileSdk = 34
     buildFeatures{
         viewBinding=true
     }
 
+    namespace = "com.example.apitest"
+    compileSdk = 34
+
+
     defaultConfig {
         applicationId = "com.example.apitest"
-        minSdk = 29
+        minSdk = 30
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
