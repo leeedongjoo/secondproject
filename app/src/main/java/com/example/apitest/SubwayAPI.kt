@@ -26,10 +26,10 @@ class SubwayAPI : AppCompatActivity() {
         var binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.goToactsub.setOnClickListener {
-            var intent = Intent(this, SubwayActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.goToactsub.setOnClickListener {
+//            var intent = Intent(this, SubwayActivity::class.java)
+//            startActivity(intent)
+//        }
 
         binding.btnSearch.setOnClickListener {
             val searchText = binding.etSearch.text.toString()
@@ -50,6 +50,7 @@ class SubwayAPI : AppCompatActivity() {
             } catch (e: CsvException) {
                 Log.e("MainActivity", "CSV parsing error: ", e) // CSV 파싱 오류 시 로그 출력
             }
+
         }
 
     }
@@ -57,6 +58,8 @@ class SubwayAPI : AppCompatActivity() {
     @Throws(IOException::class, CsvException::class)
     // CSV 파일에서 가져온 내용을 위의 코드에 들어가 입력한 값이 파일내에 있는지 확인해서 출력해줌
     private fun searchDepartureStation(departureStation: String) {
+        var binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val assetManager = this.assets // AssetManager 객체 가져오기
         val inputStream = assetManager.open("subway.csv") // assets 폴더에 있는 CSV 파일 열기
         val csvReader = CSVReader(InputStreamReader(inputStream, "EUC-KR")) // CSVReader 초기화
@@ -73,7 +76,7 @@ class SubwayAPI : AppCompatActivity() {
                 val stationCode = row[3] // 역번호
                 val direction = row[5] // 상하구분
                 Log.d("SearchResult", "연번: $serialNumber, 요일구분: $dayDivision, 호선: $lineName, 역번호: $stationCode, 출발역: $departureStation, 상하구분: $direction, 시간: ${row[6]}")
-
+                binding.showresultTX.text = "연번: $serialNumber, 요일구분: $dayDivision, 호선: $lineName, 역번호: $stationCode, 출발역: $departureStation, 상하구분: $direction, 시간당 밀집도: ${row[6]}%"
                 Toast.makeText(applicationContext, "검색성공(확인용)", Toast.LENGTH_SHORT).show();
 
                 found = true // 결과를 찾았으므로 플래그 변수 설정

@@ -21,19 +21,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/goToactsub"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
-            android:layout_marginEnd="310dp"
-            android:layout_marginBottom="295dp"
-            android:text="돌아가기"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+<!--        <Button-->
+<!--            android:id="@+id/goToactsub"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="84dp"-->
+<!--            android:layout_marginEnd="310dp"-->
+<!--            android:layout_marginBottom="295dp"-->
+<!--            android:text="돌아가기"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/btnSearch" />-->
 
         <Button
             android:id="@+id/btnSearch"
@@ -48,6 +48,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etSearch" />
 
+        <TextView
+            android:id="@+id/showresultTX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="191dp"
+            tools:layout_editor_absoluteY="458dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

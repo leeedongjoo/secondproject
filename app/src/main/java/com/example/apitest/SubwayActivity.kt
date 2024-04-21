@@ -33,6 +33,7 @@ class SubwayActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
     }
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         return event?.let {
