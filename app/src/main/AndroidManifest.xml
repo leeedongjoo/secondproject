@@ -19,6 +19,9 @@
             android:name=".SubwayAPI"
             android:exported="false" />
         <activity
+            android:name=".TimeTest"
+            android:exported="false" />
+        <activity
             android:name=".SubwayInfo"
             android:exported="false" />
 
