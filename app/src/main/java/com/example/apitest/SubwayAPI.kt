@@ -2,6 +2,8 @@ package com.example.apitest
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -13,9 +15,13 @@ import com.opencsv.CSVReader
 import com.opencsv.exceptions.CsvException
 import java.io.IOException
 import java.io.InputStreamReader
+import java.text.SimpleDateFormat
 import java.util.*
 
 class SubwayAPI : AppCompatActivity() {
+    private val timeFormat = SimpleDateFormat("EE, HH:mm", Locale.KOREA)  // "시:분" 형식으로 시간 지정
+    private val handler = Handler(Looper.getMainLooper())
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -31,7 +37,18 @@ class SubwayAPI : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
+
         binding.btnSearch.setOnClickListener {
+            val calendar = Calendar.getInstance()    // calendar = 현재 날짜와 시간
+
+            val formattedTime = timeFormat.format(calendar.time)  // "요일, 시:분" 형식으로 포맷
+            val parts = formattedTime.split(", ", ":")  // 문자열을 ", "과 ":"로 분리
+
+            val a = parts[0]  // 요일 (EE요일)
+            val b = parts[1]  // 시간 (HH)
+            val c = parts[2]  // 분 (mm)
+            // (Optional) 디버깅을 위해 Logcat에 출력
+            Log.d("TimeTest", "요일: $a, 시: $b, 분: $c")
             val searchText = binding.etSearch.text.toString()
             try {
                 if (searchText.isNotEmpty()) {
@@ -75,17 +92,27 @@ class SubwayAPI : AppCompatActivity() {
                 val lineName = row[2] // 호선
                 val stationCode = row[3] // 역번호
                 val direction = row[5] // 상하구분
-                Log.d("SearchResult", "연번: $serialNumber, 요일구분: $dayDivision, 호선: $lineName, 역번호: $stationCode, 출발역: $departureStation, 상하구분: $direction, 시간: ${row[6]}")
-                binding.showresultTX.text = "연번: $serialNumber, 요일구분: $dayDivision, 호선: $lineName, 역번호: $stationCode, 출발역: $departureStation, 상하구분: $direction, 시간당 밀집도: ${row[6]}%"
+                Log.d("SearchResult", "연번: $serialNumber, 요일구분: $dayDivision, 호선: $lineName, 역번호: $stationCode, 출발역: $departureStation, 상하구분: $direction, 시간: ${row[6]}, ${row[7]}, ${row[8]}")
+                binding.showresultTX.text = "$serialNumber"
+                binding.showresultTX2.text = "$dayDivision"
+                binding.showresultTX3.text = "$lineName 호선"
+                binding.showresultTX4.text = "역번호: $stationCode"
+                binding.showresultTX5.text = "출발역: $departureStation"
+                binding.showresultTX6.text = "상하구분: $direction"
+                binding.showresultTX7.text = "시간당 밀집도: ${row[6]}%"
                 Toast.makeText(applicationContext, "검색성공(확인용)", Toast.LENGTH_SHORT).show();
 
                 found = true // 결과를 찾았으므로 플래그 변수 설정
+
             }
         }
 
         if (!found) {
             Log.d("Search", "No results found for: $departureStation in the current time block.") // 검색 결과가 없을 때 로그 출력
             Toast.makeText(applicationContext, "정확한 역이름을 검색해주세요.", Toast.LENGTH_SHORT).show()
+
         }
+
     }
+
 }

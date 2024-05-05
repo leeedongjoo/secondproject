@@ -33,8 +33,8 @@ class SubwayActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.menu2.setOnClickListener {
-            var intentTT = Intent(this, TimeTest::class.java)
-            startActivity(intentTT)
+            var intenttt = Intent(this, TimeTest::class.java)
+            startActivity(intenttt)
         }
 
 
@@ -54,6 +54,3 @@ class SubwayActivity : AppCompatActivity() {
         }
     }
 }
-
-
-

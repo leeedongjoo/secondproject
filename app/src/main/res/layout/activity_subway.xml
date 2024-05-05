@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/skyblue"
+        android:background="@color/eunjipurple"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:orientation="horizontal"
-        android:background="@color/skyblue"
+        android:background="@color/eunjipurple"
         >
 
         <TextView
