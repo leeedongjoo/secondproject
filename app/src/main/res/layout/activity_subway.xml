@@ -113,55 +113,29 @@
             android:id="@+id/img_subway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_subway"
+            android:src="@drawable/lineeight"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
         </ImageView>
-
-        <android.widget.Button
-            android:id="@+id/youngsan"
-            android:layout_width="4.5dp"
-            android:layout_height="4.5dp"
-            android:background="@drawable/big_rounded_button"
-            tools:layout_editor_absoluteX="175.8dp"
-            tools:layout_editor_absoluteY="330dp" />
-
-        <android.widget.Button
-            android:id="@+id/seobinggo"
-            android:layout_width="2.5dp"
-            android:layout_height="2.5dp"
-            android:layout_marginStart="214dp"
-            android:layout_marginBottom="194dp"
-            android:background="@drawable/small_rounded_button"
-            app:layout_constraintBottom_toTopOf="@+id/img_subway"
-            app:layout_constraintEnd_toStartOf="@+id/img_subway"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/middlelline"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="51dp"
-            tools:layout_editor_absoluteY="121dp">
-
-
-
-            <TextView
-                android:id="@+id/testtx"
-                android:layout_width="42dp"
-                android:layout_height="51dp"
-                android:text="no"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="31dp" />
+        <ImageView
+        android:id="@+id/img_linefive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linefive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
 
 
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
