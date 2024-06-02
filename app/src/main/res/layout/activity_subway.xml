@@ -106,9 +106,75 @@
             android:text="설정"
             android:paddingRight="50dp"/>
     </LinearLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|top"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox0"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text=" 전체" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="1호선" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="2호선" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="3호선" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="4호선" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="5호선" />
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="6호선" />
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="7호선" />
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="8호선" />
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="9호선" />
+
+
+        </LinearLayout>
         <ImageView
             android:id="@+id/img_subwayone"
             android:layout_width="wrap_content"
@@ -206,5 +272,5 @@
         </ImageView>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
 </LinearLayout>
