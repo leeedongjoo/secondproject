@@ -27,6 +27,7 @@ class SubwayActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
         // ImageView 인스턴스 초기화
         imageViewOverlays = arrayOf(
             findViewById(R.id.img_subwayone),
