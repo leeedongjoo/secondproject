@@ -35,7 +35,7 @@ class SubwayInfo : Fragment() {
 
         buttons = mutableListOf() // 버튼을 저장할 수정 가능한 리스트 생성
 
-        for (i in 0..50) {
+        for (i in 0..447) {
             val buttonId = resources.getIdentifier("button_$i", "id", requireActivity().packageName)
             val button = binding.root.findViewById<Button>(buttonId)
             buttons.add(button) // 수정 가능한 리스트에 버튼 추가
@@ -139,58 +139,3 @@ class SubwayInfo : Fragment() {
     }
 }
 
-//제발 바인딩 써주세요 제발제제바어벶러젣ㅂㄱ러ㅐㅔㅈ
-//        val button = binding.button
-//        buttons = listOf(
-//            view.findViewById(R.id.button),
-//            view.findViewById(R.id.button_1),
-//            view.findViewById(R.id.button_2),
-//            view.findViewById(R.id.button_3),
-//            view.findViewById(R.id.button_4),
-//            view.findViewById(R.id.button_5),
-//            view.findViewById(R.id.button_6),
-//            view.findViewById(R.id.button_7),
-//            view.findViewById(R.id.button_8),
-//            view.findViewById(R.id.button_9),
-//            view.findViewById(R.id.button_10),
-//            view.findViewById(R.id.button_11),
-//            view.findViewById(R.id.button_12),
-//            view.findViewById(R.id.button_13),
-//            view.findViewById(R.id.button_14),
-//            view.findViewById(R.id.button_15),
-//            view.findViewById(R.id.button_16),
-//            view.findViewById(R.id.button_17),
-//            view.findViewById(R.id.button_18),
-//            view.findViewById(R.id.button_19),
-//            view.findViewById(R.id.button_20),
-//            view.findViewById(R.id.button_21),
-//            view.findViewById(R.id.button_22),
-//            view.findViewById(R.id.button_23),
-//            view.findViewById(R.id.button_24),
-//            view.findViewById(R.id.button_25),
-//            view.findViewById(R.id.button_26),
-//            view.findViewById(R.id.button_27),
-//            view.findViewById(R.id.button_28),
-//            view.findViewById(R.id.button_29),
-//            view.findViewById(R.id.button_30),
-//            view.findViewById(R.id.button_31),
-//            view.findViewById(R.id.button_32),
-//            view.findViewById(R.id.button_33),
-//            view.findViewById(R.id.button_34),
-//            view.findViewById(R.id.button_35),
-//            view.findViewById(R.id.button_36),
-//            view.findViewById(R.id.button_37),
-//            view.findViewById(R.id.button_38),
-//            view.findViewById(R.id.button_39),
-//            view.findViewById(R.id.button_40),
-//            view.findViewById(R.id.button_41),
-//            view.findViewById(R.id.button_42),
-//            view.findViewById(R.id.button_43),
-//            view.findViewById(R.id.button_44),
-//            view.findViewById(R.id.button_45),
-//            view.findViewById(R.id.button_46),
-//            view.findViewById(R.id.button_47),
-//            view.findViewById(R.id.button_48),
-//            view.findViewById(R.id.button_49),
-//            view.findViewById(R.id.button_50),
-//        )
