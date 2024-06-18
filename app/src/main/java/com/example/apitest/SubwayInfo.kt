@@ -1,5 +1,6 @@
 package com.example.apitest
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,11 +9,21 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import android.text.TextWatcher
+import android.text.Editable
 import com.example.apitest.R
 import com.example.apitest.SubwayAPI
+import androidx.appcompat.app.AppCompatActivity
+
+import com.example.apitest.databinding.ActivityMainBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.example.apitest.databinding.SubwayInfoBinding
+import com.opencsv.CSVReader
+import com.opencsv.exceptions.CsvException
+import java.io.IOException
+import java.io.InputStreamReader
 
 class SubwayInfo : Fragment() {
     private lateinit var binding: SubwayInfoBinding
@@ -35,7 +46,7 @@ class SubwayInfo : Fragment() {
 
         buttons = mutableListOf() // 버튼을 저장할 수정 가능한 리스트 생성
 
-        for (i in 0..447) {
+        for (i in 0..446) {
             val buttonId = resources.getIdentifier("button_$i", "id", requireActivity().packageName)
             val button = binding.root.findViewById<Button>(buttonId)
             buttons.add(button) // 수정 가능한 리스트에 버튼 추가
@@ -61,10 +72,13 @@ class SubwayInfo : Fragment() {
         return view
     }
 
+
+
     private fun initializeBottomSheet() {
         bottomSheetLayout = binding.root.findViewById(R.id.bottom_sheet_layout)
         bottomSheetExpandPersistentButton = binding.root.findViewById(R.id.page_1)
         bottomSheetHidePersistentButton = binding.root.findViewById(R.id.page_4)
+
 
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetLayout)
         bottomSheetBehavior.addBottomSheetCallback(object :
@@ -106,6 +120,7 @@ class SubwayInfo : Fragment() {
         persistentBottomSheetEvent()
     }
 
+
     private fun persistentBottomSheetEvent() {
         bottomSheetExpandPersistentButton.setOnClickListener {
             // BottomSheet의 최대 높이만큼 보여주기
@@ -137,5 +152,6 @@ class SubwayInfo : Fragment() {
             }
         }
     }
+
 }
 

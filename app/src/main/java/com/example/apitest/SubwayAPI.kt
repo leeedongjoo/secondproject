@@ -5,6 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.apitest.databinding.ActivityMainBinding
@@ -43,13 +44,13 @@ class SubwayAPI : AppCompatActivity() {
         })
 
         btnSearch.setOnClickListener {
-            val query = etSearch.text.toString().trim()
-            subwayInfoFragment.filterButtons(query)
 
-            val searchText = binding.etSearch.text.toString()
+
+            val searchText = binding.etSearch.text.toString().trim()
             try {
                 if (searchText.isNotEmpty()) {
                     searchDepartureStation(searchText) // 출발역 검색 메서드 호출
+
                 } else {
                     Toast.makeText(applicationContext, "검색어를 입력해주세요.", Toast.LENGTH_SHORT).show()
                 }
@@ -71,6 +72,8 @@ class SubwayAPI : AppCompatActivity() {
         var found = false
         for (row in allContent.drop(1)) {
             if (row[4].equals(departureStation, ignoreCase = true)) {
+                var textchange=binding.root.findViewById<TextView>(R.id.page_2)
+                textchange.text = "시간당 밀집도: ${row[6]}%"
                 found = true
                 break
             }
@@ -80,4 +83,6 @@ class SubwayAPI : AppCompatActivity() {
             Toast.makeText(applicationContext, "정확한 역이름을 검색해주세요.", Toast.LENGTH_SHORT).show()
         }
     }
+
 }
+

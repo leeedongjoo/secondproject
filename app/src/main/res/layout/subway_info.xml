@@ -21,12 +21,19 @@
                 android:orientation="vertical">
                 <include layout="@layout/subway_info_buttonone" />
                 <include layout="@layout/subway_info_buttontwo" />
-
-
-
-
-
-
+                <Button
+                    android:id="@+id/button_357"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="23dp"
+                    android:backgroundTint="#FEF7FF"
+                    android:color="#ff0000"
+                    android:text="중앙보훈병원"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -3148,25 +3155,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
-                    <Button
-                        android:id="@+id/button_357"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="23dp"
-                        android:backgroundTint="#FEF7FF"
-                        android:color="#ff0000"
-                        android:text="건대입구"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -4952,19 +4941,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
-                        android:id="@+id/button_447"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="23dp"
-                        android:backgroundTint="#FEF7FF"
-                        android:color="#ff0000"
-                        android:text="중앙보훈병원"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>

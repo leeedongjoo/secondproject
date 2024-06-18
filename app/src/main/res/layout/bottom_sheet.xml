@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="5dp"
-        android:text="출발역"
+        android:text="밑의 버튼들을 이용해 주세요"
         android:textSize="15sp" />
 
     <Button
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="5dp"
-        android:text="도착역"
+        android:text="혼잡도 버튼을 누르면 혼잡도가 보입니다."
         android:textSize="15sp"  />
 
     <Button
