@@ -305,7 +305,7 @@
             android:layout_marginBottom="23dp"
             android:backgroundTint="#FEF7FF"
             android:color="#ff0000"
-            android:text="신도림"
+            android:text="도림천"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -324,7 +324,7 @@
             android:layout_marginBottom="23dp"
             android:backgroundTint="#FEF7FF"
             android:color="#ff0000"
-            android:text="도림천"
+            android:text="양천구청"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -343,25 +343,6 @@
             android:layout_marginBottom="23dp"
             android:backgroundTint="#FEF7FF"
             android:color="#ff0000"
-            android:text="양천구청"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_119"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
             android:text="신정네거리"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -374,7 +355,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_120"
+            android:id="@+id/button_119"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -392,7 +373,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_121"
+            android:id="@+id/button_120"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -410,7 +391,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_122"
+            android:id="@+id/button_121"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -428,7 +409,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_123"
+            android:id="@+id/button_122"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -446,7 +427,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_124"
+            android:id="@+id/button_123"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -464,7 +445,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_125"
+            android:id="@+id/button_124"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -482,7 +463,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_126"
+            android:id="@+id/button_125"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -500,7 +481,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_127"
+            android:id="@+id/button_126"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -518,7 +499,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_128"
+            android:id="@+id/button_127"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -536,7 +517,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_129"
+            android:id="@+id/button_128"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -554,25 +535,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_130"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="시청"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/button_131"
+            android:id="@+id/button_129"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -590,7 +553,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_132"
+            android:id="@+id/button_130"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -608,7 +571,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_133"
+            android:id="@+id/button_131"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -626,7 +589,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_134"
+            android:id="@+id/button_132"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -644,7 +607,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_135"
+            android:id="@+id/button_133"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -662,7 +625,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_136"
+            android:id="@+id/button_134"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -680,7 +643,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_137"
+            android:id="@+id/button_135"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -698,7 +661,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_138"
+            android:id="@+id/button_136"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -716,7 +679,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_139"
+            android:id="@+id/button_137"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -734,7 +697,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_140"
+            android:id="@+id/button_138"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -752,7 +715,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_141"
+            android:id="@+id/button_139"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -770,7 +733,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_142"
+            android:id="@+id/button_140"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -788,7 +751,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_143"
+            android:id="@+id/button_141"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -806,25 +769,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_144"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="신설동"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/button_145"
+            android:id="@+id/button_142"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -842,7 +787,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_146"
+            android:id="@+id/button_143"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -860,7 +805,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_147"
+            android:id="@+id/button_144"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -878,7 +823,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/button_148"
+            android:id="@+id/button_145"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -898,7 +843,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_149"
+            android:id="@+id/button_146"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -918,7 +863,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_150"
+            android:id="@+id/button_147"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -938,7 +883,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_151"
+            android:id="@+id/button_148"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -958,7 +903,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_152"
+            android:id="@+id/button_149"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -978,7 +923,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_153"
+            android:id="@+id/button_150"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -998,7 +943,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_154"
+            android:id="@+id/button_151"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1018,7 +963,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_155"
+            android:id="@+id/button_152"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1038,7 +983,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_156"
+            android:id="@+id/button_153"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1052,33 +997,12 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_157"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="원흥"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_158"
+            android:id="@+id/button_154"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1098,7 +1022,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_159"
+            android:id="@+id/button_155"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1118,7 +1042,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_160"
+            android:id="@+id/button_156"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1138,7 +1062,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_161"
+            android:id="@+id/button_157"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1158,7 +1082,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_162"
+            android:id="@+id/button_158"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1178,7 +1102,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_163"
+            android:id="@+id/button_159"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1198,7 +1122,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_164"
+            android:id="@+id/button_160"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1218,7 +1142,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_165"
+            android:id="@+id/button_161"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1238,7 +1162,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_166"
+            android:id="@+id/button_162"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1258,7 +1182,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_167"
+            android:id="@+id/button_163"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1278,7 +1202,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_168"
+            android:id="@+id/button_164"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1292,53 +1216,12 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_169"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="종로3가"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_170"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="을지로3가"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_171"
+            android:id="@+id/button_165"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1358,7 +1241,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_172"
+            android:id="@+id/button_166"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1378,7 +1261,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_173"
+            android:id="@+id/button_167"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1398,7 +1281,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_174"
+            android:id="@+id/button_168"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1418,7 +1301,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_175"
+            android:id="@+id/button_169"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1438,7 +1321,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_176"
+            android:id="@+id/button_170"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1458,7 +1341,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_177"
+            android:id="@+id/button_171"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1478,7 +1361,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_178"
+            android:id="@+id/button_172"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1498,7 +1381,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_179"
+            android:id="@+id/button_173"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1512,33 +1395,12 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_180"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="교대"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_181"
+            android:id="@+id/button_174"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1558,7 +1420,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_182"
+            android:id="@+id/button_175"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1578,7 +1440,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_183"
+            android:id="@+id/button_176"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1598,7 +1460,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_184"
+            android:id="@+id/button_177"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1618,7 +1480,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_185"
+            android:id="@+id/button_178"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1638,7 +1500,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_186"
+            android:id="@+id/button_179"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1658,7 +1520,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_187"
+            android:id="@+id/button_180"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1678,7 +1540,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_188"
+            android:id="@+id/button_181"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1698,7 +1560,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_189"
+            android:id="@+id/button_182"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1718,7 +1580,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_190"
+            android:id="@+id/button_183"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1738,7 +1600,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_191"
+            android:id="@+id/button_184"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1758,7 +1620,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_192"
+            android:id="@+id/button_185"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1772,73 +1634,12 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_193"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="진접"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_194"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="오남"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_195"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="별내별가람"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_196"
+            android:id="@+id/button_186"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1858,7 +1659,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_197"
+            android:id="@+id/button_187"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1878,7 +1679,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_198"
+            android:id="@+id/button_188"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
@@ -1892,33 +1693,12 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_199"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:backgroundTint="#FEF7FF"
-            android:color="#ff0000"
-            android:text="창동"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_200"
+            android:id="@+id/button_189"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="23dp"
