@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="5dp"
-        android:text="혼잡도 버튼을 누르면 혼잡도가 보입니다."
+        android:text="혼잡도 보기를 아직 안누르셨군요."
         android:textSize="15sp"  />
 
     <Button
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="5dp"
-        android:text="혼잡도"
+        android:text="역이름을 정확히 입력하고 혼잡도 보기를 눌러주세요."
         android:textSize="15sp"  />
 
 
