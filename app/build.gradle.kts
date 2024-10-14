@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+
+    id("com.google.gms.google-services")  // Google Services 플러그인 적용
+
 }
 
 android {
@@ -57,6 +60,9 @@ dependencies {
     implementation("com.opencsv:opencsv:5.6")
     implementation("androidx.test:core:1.5.0-rc01")
     implementation("com.otaliastudios:zoomlayout:1.9.0")
-
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-database-ktx")
     //implementation ("com.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9") // Gson 컨버터 추가
 }
