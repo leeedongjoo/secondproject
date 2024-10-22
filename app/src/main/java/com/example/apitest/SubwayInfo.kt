@@ -24,7 +24,6 @@ import com.opencsv.CSVReader
 import com.opencsv.exceptions.CsvException
 import java.io.IOException
 import java.io.InputStreamReader
-
 class SubwayInfo : Fragment() {
     private lateinit var binding: SubwayInfoBinding
     private lateinit var buttons: MutableList<Button> // MutableList로 변경
