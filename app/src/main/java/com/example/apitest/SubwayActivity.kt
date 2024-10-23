@@ -1,11 +1,14 @@
 package com.example.apitest
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
+import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.apitest.databinding.ActivitySubwayBinding
@@ -17,16 +20,30 @@ class SubwayActivity : AppCompatActivity() {
 
     private lateinit var scaleGestureDetectors: Array<ScaleGestureDetector?>
     private var scaleFactor = 1.0f
-    //private lateinit var imageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subway)
+        setContentView(R.layout.activity_subway) // XML 파일을 로드
         enableEdgeToEdge()
         val binding = ActivitySubwayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // 두 개의 LinearLayout을 참조
+        val topLinearLayout = findViewById<LinearLayout>(R.id.topLinearLayout) // 첫 번째 LinearLayout
+        val secondLinearLayout = findViewById<LinearLayout>(R.id.secondLinearLayout) // 두 번째 LinearLayout
 
+        // 랜덤 색상 리스트
+        val colors = listOf(
+            Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW, Color.MAGENTA, Color.CYAN, Color.LTGRAY
+        )
+
+        // menu3 버튼 클릭 시 두 개의 LinearLayout 배경색 변경
+        val menu3Button = findViewById<Button>(R.id.menu3)
+        menu3Button.setOnClickListener {
+            val randomColor = colors.random() // 랜덤 색상 선택
+            topLinearLayout.setBackgroundColor(randomColor) // 첫 번째 LinearLayout 배경 변경
+            secondLinearLayout.setBackgroundColor(randomColor) // 두 번째 LinearLayout 배경도 동일한 색상으로 변경
+        }
 
         // ImageView 인스턴스 초기화
         imageViewOverlays = arrayOf(
@@ -54,6 +71,7 @@ class SubwayActivity : AppCompatActivity() {
             findViewById(R.id.checkBox9)
         )
         checkBox0 = findViewById(R.id.checkBox0)
+
         // ScaleGestureDetector 초기화
         scaleGestureDetectors = Array(imageViewOverlays.size) { index ->
             ScaleGestureDetector(this, ScaleListener(index))
@@ -81,7 +99,6 @@ class SubwayActivity : AppCompatActivity() {
             val intenttt = Intent(this, TimeTest::class.java)
             startActivity(intenttt)
         }
-
     }
 
     private fun setAllCheckBoxesChecked(isChecked: Boolean) {
@@ -116,6 +133,7 @@ class SubwayActivity : AppCompatActivity() {
             true
         } ?: false
     }
+
     inner class ScaleListener(private val index: Int) : ScaleGestureDetector.SimpleOnScaleGestureListener() {
         override fun onScale(detector: ScaleGestureDetector): Boolean {
             scaleFactor *= detector.scaleFactor

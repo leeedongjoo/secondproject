@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".SubwayActivity"
     android:orientation="vertical"
-    android:background="@color/white"
-    >
+    android:background="@color/white">
 
     <LinearLayout
+        android:id="@+id/topLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/eunjipurple"
@@ -23,11 +23,7 @@
             android:layout_height="75dp"
             android:backgroundTint="@android:color/white"
             android:drawableTop="@drawable/img_search"
-            android:paddingLeft="50dp"
-
-            >
-
-        </androidx.appcompat.widget.AppCompatButton>
+            android:paddingLeft="50dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/menu2"
@@ -35,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="75dp"
             android:backgroundTint="@android:color/white"
-            android:drawableTop="@drawable/img_time"></androidx.appcompat.widget.AppCompatButton>
+            android:drawableTop="@drawable/img_time" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/menu3"
@@ -43,9 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="75dp"
             android:backgroundTint="@android:color/white"
-            android:drawableTop="@drawable/img_map">
-
-        </androidx.appcompat.widget.AppCompatButton>
+            android:drawableTop="@drawable/img_map" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/menu4"
@@ -54,17 +48,15 @@
             android:layout_height="75dp"
             android:backgroundTint="@android:color/white"
             android:drawableTop="@drawable/img_setting"
-            android:paddingRight="50dp">
-
-        </androidx.appcompat.widget.AppCompatButton>
+            android:paddingRight="50dp" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/secondLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:orientation="horizontal"
-        android:background="@color/eunjipurple"
-        >
+        android:background="@color/eunjipurple">
 
         <TextView
             android:id="@+id/txtSearch"
@@ -83,10 +75,18 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textAlignment="center"
-            android:text="현재시간"
+            android:text="최근검색"
             android:paddingRight="5dp"/>
 
-
+        <TextView
+            android:id="@+id/txtX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="미정"
+            android:paddingRight="10dp"/>
 
         <TextView
             android:id="@+id/txtSetting"
@@ -95,110 +95,89 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textAlignment="center"
-            android:text="they are nothing  "
+            android:text="설정"
             android:paddingRight="50dp"/>
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="start|top"
-        android:layout_marginLeft="5dp">
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:columnCount="5"
+        android:rowCount="2">
 
         <CheckBox
             android:id="@+id/checkBox0"
-            android:layout_width="66.5dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
             android:checked="true"
             android:text=" 전체" />
 
         <CheckBox
             android:id="@+id/checkBox1"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/checkBox0"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="1호선" />
 
         <CheckBox
             android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/checkBox1"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="2호선" />
 
         <CheckBox
             android:id="@+id/checkBox3"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/checkBox2"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="3호선" />
 
         <CheckBox
             android:id="@+id/checkBox4"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/checkBox3"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="4호선" />
 
         <CheckBox
             android:id="@+id/checkBox5"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_below="@id/checkBox0"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="5호선" />
 
         <CheckBox
             android:id="@+id/checkBox6"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_below="@id/checkBox0"
-            android:layout_toRightOf="@id/checkBox5"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="6호선" />
 
         <CheckBox
             android:id="@+id/checkBox7"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_below="@id/checkBox0"
-            android:layout_toRightOf="@id/checkBox6"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="7호선" />
 
         <CheckBox
             android:id="@+id/checkBox8"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_below="@id/checkBox0"
-            android:layout_toRightOf="@id/checkBox7"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="8호선" />
 
         <CheckBox
             android:id="@+id/checkBox9"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_below="@id/checkBox0"
-            android:layout_toRightOf="@id/checkBox8"
+            android:layout_height="20dp"
             android:checked="true"
             android:text="9호선" />
+    </GridLayout>
 
-
-    </RelativeLayout>
-<com.otaliastudios.zoom.ZoomLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -207,95 +186,58 @@
             android:id="@+id/img_subwayone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/lineone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/lineone" />
         <ImageView
             android:id="@+id/img_subwaytwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/linetwo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/linetwo" />
         <ImageView
             android:id="@+id/img_subwaythree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/linethree"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/linethree" />
         <ImageView
             android:id="@+id/img_subwayfour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/linefour"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/linefour" />
         <ImageView
             android:id="@+id/img_subwayfive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/linefive"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/linefive" />
         <ImageView
             android:id="@+id/img_subwaysix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/linesix"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/linesix" />
         <ImageView
             android:id="@+id/img_subwayseven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/lineseven"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:src="@drawable/lineseven" />
         <ImageView
             android:id="@+id/img_subwayeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/lineeight"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:src="@drawable/lineeight" />
         <ImageView
             android:id="@+id/img_subwaynine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/linenine"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            android:src="@drawable/linenine" />
 
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="접기/펼치기"
+            android:textColor="@color/black" />
 
     </FrameLayout>
-</com.otaliastudios.zoom.ZoomLayout>
 </LinearLayout>
