@@ -4,4 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="skyblue">#87CEEB</color>
     <color name="eunjipurple">#CCCCFF</color>
+    <color name="textBold">#121212</color>
+    <color name="textLight">#111111</color>  <!-- 공백 제거 -->
+    <color name="greenColor">#CCD5AE</color>  <!-- 공백 제거 -->
+    <color name="lightGreen">#E0E5B6</color>
+    <color name="BASIC">#FAEDCE</color>
+    <color name="lightYellow">#FEFAE0</color>
+
+
 </resources>

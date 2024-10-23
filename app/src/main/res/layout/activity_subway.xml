@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/eunjipurple"
+        android:background="@color/greenColor"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:orientation="horizontal"
-        android:background="@color/eunjipurple"
+        android:background="@color/lightGreen"
         >
 
         <TextView
@@ -294,7 +294,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
-
 
     </FrameLayout>
 </com.otaliastudios.zoom.ZoomLayout>
