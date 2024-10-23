@@ -81,10 +81,7 @@ class SubwayActivity : AppCompatActivity() {
             val intenttt = Intent(this, TimeTest::class.java)
             startActivity(intenttt)
         }
-        binding.menu4.setOnClickListener{
-            val intentttt = Intent(this, SettingActivity::class.java)
-            startActivity(intentttt)
-        }
+      
 
     }
 
