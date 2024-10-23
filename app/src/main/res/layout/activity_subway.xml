@@ -68,7 +68,7 @@
 
         <TextView
             android:id="@+id/txtSearch"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
@@ -78,7 +78,7 @@
 
         <TextView
             android:id="@+id/txtTime"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
@@ -89,13 +89,22 @@
 
 
         <TextView
-            android:id="@+id/txtSetting"
-            android:layout_width="wrap_content"
+            android:id="@+id/txtTheme"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:textAlignment="center"
-            android:text="they are nothing  "
+            android:text="테마변경"
+            android:paddingRight="50dp"/>
+        <TextView
+            android:id="@+id/txtSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="설정"
             android:paddingRight="50dp"/>
     </LinearLayout>
 
