@@ -1,11 +1,14 @@
 package com.example.apitest
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
+import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.apitest.databinding.ActivitySubwayBinding
@@ -27,7 +30,19 @@ class SubwayActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
+// 두 개의 LinearLayout을 참조
+        val topLinearLayout = findViewById<LinearLayout>(R.id.topLinearLayout) // 첫 번째 LinearLayout
+        val secondLinearLayout = findViewById<LinearLayout>(R.id.secondLinearLayout) // 두 번째 LinearLayout
+        val colors = listOf(
+            Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW, Color.MAGENTA, Color.CYAN, Color.LTGRAY
+        )
+        // menu3 버튼 클릭 시 두 개의 LinearLayout 배경색 변경
+        val menu3Button = findViewById<Button>(R.id.menu3)
+        menu3Button.setOnClickListener {
+            val randomColor = colors.random() // 랜덤 색상 선택
+            topLinearLayout.setBackgroundColor(randomColor) // 첫 번째 LinearLayout 배경 변경
+            secondLinearLayout.setBackgroundColor(randomColor) // 두 번째 LinearLayout 배경도 동일한 색상으로 변경
+        }
         // ImageView 인스턴스 초기화
         imageViewOverlays = arrayOf(
             findViewById(R.id.img_subwayone),
@@ -81,7 +96,7 @@ class SubwayActivity : AppCompatActivity() {
             val intenttt = Intent(this, TimeTest::class.java)
             startActivity(intenttt)
         }
-      
+
 
     }
 

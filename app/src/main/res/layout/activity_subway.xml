@@ -11,6 +11,7 @@
     >
 
     <LinearLayout
+        android:id="@+id/topLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/greenColor"
@@ -60,6 +61,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/secondLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:orientation="horizontal"
