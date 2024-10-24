@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.FirebaseFirestore
 import com.opencsv.CSVReader
 import com.opencsv.exceptions.CsvException
 import java.io.IOException
@@ -175,6 +176,7 @@ class SubwayAPI : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var subwayInfoFragment: SubwayInfo
     private lateinit var database: DatabaseReference
+    private lateinit var firestore: FirebaseFirestore  // Firestore 인스턴스 선언
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -184,7 +186,7 @@ class SubwayAPI : AppCompatActivity() {
 
         // Firebase Database 초기화
         database = FirebaseDatabase.getInstance("https://subway-e1881-default-rtdb.firebaseio.com/").reference
-
+        firestore = FirebaseFirestore.getInstance()
         val etSearch = binding.etSearch
         val btnSearch = binding.btnSearch
         subwayInfoFragment = SubwayInfo()
@@ -213,11 +215,25 @@ class SubwayAPI : AppCompatActivity() {
             Log.d("SubwayAPI", "ButtonClick - 검색어: $searchText")
 
             if (searchText.isNotEmpty()) {
+                // Firestore에 검색 기록 저장
+                saveSearchToFirestore(searchText)
                 searchDepartureStation(searchText)  // 출발역 검색 메서드 호출
             } else {
                 Toast.makeText(applicationContext, "검색어를 입력해주세요.", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    // Firestore에 검색 기록을 저장하는 메서드
+    private fun saveSearchToFirestore(searchText: String) {
+        val searchData = hashMapOf(
+            "name" to searchText,
+            "timestamp" to System.currentTimeMillis()  // 검색 시간을 함께 저장
+        )
+
+        firestore.collection("searchRecent")  // "searchRecent" 컬렉션에 저장
+            .add(searchData)
+            .addOnSuccessListener { Log.d("Firestore", "검색 기록 저장 성공: $searchText") }
+            .addOnFailureListener { e -> Log.e("Firestore", "검색 기록 저장 실패", e) }
     }
 
     // Firebase에서 출발역을 검색하는 메서드

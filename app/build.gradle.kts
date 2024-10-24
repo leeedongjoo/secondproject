@@ -64,5 +64,9 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-database-ktx")
+    implementation("androidx.preference:preference-ktx:1.1.1")
+    implementation("com.google.firebase:firebase-firestore:24.0.0")
+
+
     //implementation ("com.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9") // Gson 컨버터 추가
 }
